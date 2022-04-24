@@ -4,6 +4,9 @@
   background-color: rgb(174, 173, 173);
   padding: 5px 10px;;
 }
+.task  fa-icon{
+  cursor: pointer !important;
+}
 
  .task > * {
    margin: 0;
