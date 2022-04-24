@@ -8,6 +8,10 @@
   cursor: pointer !important;
 }
 
- .task > * {
-   margin: 0;
- } 
+.task > * {
+  margin: 0;
+} 
+
+.task-reminder{
+  border-left: 7px solid green ;
+}
