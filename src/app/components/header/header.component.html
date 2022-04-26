@@ -1,4 +1,7 @@
 <div class="container">
   <h1>{{ title }}</h1>
-  <app-button color="green" text="ssss" (btnClick)="onClick()"></app-button>
+  <app-button color="{{showToggle? 'red': 'green'}}" 
+  text="{{showToggle? 'close': 'add'}}" 
+  (btnClick)="onClick()">
+</app-button>
 </div>
