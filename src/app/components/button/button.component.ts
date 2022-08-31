@@ -6,15 +6,15 @@ import { Component, OnInit,Input,Output, EventEmitter } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
-  @Input() text:string | undefined;
-  @Input() color:string | undefined;
-  @Output() btnClick = new EventEmitter();
+  @Input() color!: string
+  @Input() text!: string
+  @Output() btnClick: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
-  btnOnClick() {
-    this.btnClick.emit()
-  }
+ onClick(){
+  this.btnClick.emit();
+ }
 
 }

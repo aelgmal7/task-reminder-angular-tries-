@@ -1,8 +1,9 @@
-.container {
+header {
   display:flex;
   justify-content:space-between;
-  max-width: 400px;
+  /* max-width: 400px; */
   align-items:center;
   box-sizing: border-box;
   padding: 5px 10px;
+  margin:auto;
 }
