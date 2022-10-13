@@ -3,6 +3,7 @@ import { Task} from '../../../Task'
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
+
 @Component({
   selector: 'app-task-item',
   templateUrl: './task-item.component.html',
@@ -13,6 +14,8 @@ export class TaskItemComponent implements OnInit {
   @Output() onDeleteTask:EventEmitter<any> = new EventEmitter();
   @Output() onToggleTask:EventEmitter<any> = new EventEmitter();
   ico=faTimes
+  faTimes =faTimes
+
 
   constructor() { }
 

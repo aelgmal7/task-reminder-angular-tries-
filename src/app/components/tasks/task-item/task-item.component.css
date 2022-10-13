@@ -1,8 +1,12 @@
 .task{
+  box-sizing: border-box;
   margin-bottom:15px;
   /* margin:auto !important; */
   background-color: rgb(174, 173, 173);
-  padding: 5px 10px;;
+  display:flex;
+  justify-content:space-between;
+  padding: 5px 20px;
+  align-items:center;
 }
 .task  fa-icon{
   cursor: pointer !important;
@@ -14,4 +18,9 @@
 
 .task-reminder{
   border-left: 7px solid green ;
+}
+.task h3 {
+ display: flex;
+ justify-content:space-between;
+ align-items:center;
 }

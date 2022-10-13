@@ -1,15 +1,15 @@
 <form (ngSubmit)="addTask()"  *ngIf="showToggle">
   <div class="form-control">
-    <label for=""> Task</label>
-    <input type="text" placeholder="add Task" id="add_Task" name="addTask" [(ngModel)]="text">
+    <label for="add_Task"> Task</label>
+    <input type="text" placeholder="add Task" id="add_Task" name="addTask" class="form-control" [(ngModel)]="text">
   </div>
   <div class="form-control">
-    <label for=""> day</label>
-    <input type="text" placeholder="add day" id="add_Day" name="addDay" [(ngModel)]="day">
+    <label for="add_Day"> day</label>
+    <input type="text" placeholder="add day" id="add_Day" name="addDay" class="form-control" [(ngModel)]="day">
   </div>
   <div class="form-control">
-    <label for=""> set Reminder</label>
-    <input type="checkBox" placeholder="add Task" id="add_Reminder" name="addReminder" [(ngModel)]="reminder">
+    <label for="add_Reminder" style="margin-right:10px"> set Reminder</label>
+    <input type="checkBox" placeholder="add Task" id="add_Reminder" name="addReminder" class="form-check-input" [(ngModel)]="reminder">
   </div>
-  <input type="submit" value="save task" />
+  <input type="submit" value="save task"  class="btn btn-success m-1"/>
 </form>

@@ -1,4 +1,19 @@
-<div class="task" [ngClass]="{'task-reminder':task.reminder}" (dblclick)="toggleTaskReminder(task)">
+<!-- <div class="task" [ngClass]="{'task-reminder':task.reminder}" (dblclick)="toggleTaskReminder(task)">
   <h3>{{task.text}}</h3>
   <p>{{task.day}} <fa-icon (click)="onDelete(task)" [icon]="ico" [ngStyle]="{'color': 'red'}"></fa-icon></p>
+</div> -->
+<div class="task" [ngClass]="{'task-reminder':task.reminder}" (dblclick)="toggleTaskReminder(task)">
+  <div class="wrapper">
+
+    <h3>
+      {{task.text}}
+    </h3>
+    <p>{{task.day}}</p>
+  </div>
+  <fa-icon 
+    [ngStyle]="{color:'red',fontSize:'1.6em'}"
+    [icon]="faTimes"
+    (click)="onDelete(task)"
+   ></fa-icon>
+
 </div>
